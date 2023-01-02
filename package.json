@@ -3,7 +3,7 @@
     "scripts": {
         "start": "webpack serve --port 9000 --env isLocal",
         "build": "concurrently yarn:build:*",
-        "build:webpack": "webpack --mode=production"
+        "build:webpack": "webpack --mode=production",
     },
     "dependencies": {
         "@types/systemjs": "^6.1.1",
