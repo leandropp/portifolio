@@ -24,13 +24,14 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <% if (isLocal) { %>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@lpp/root-config": "//localhost:9000/lpp-root-config.js"
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@lpp/root-config": "//localhost:9000/lpp-root-config.js",
+          "@lpp/portifolio-hero": "//localhost:8500/lpp-portifolio-hero.js"
+        }
       }
-    }
-  </script>
+    </script>
   <% } %>
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
@@ -46,7 +47,6 @@
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <main></main>
   <script>
     System.import('@lpp/root-config');
   </script>

@@ -4,7 +4,7 @@
         "start": "webpack serve --port 9000 --env isLocal",
         "build": "concurrently yarn:build:*",
         "build:webpack": "webpack --mode=production",
-        "deploy": "aws s3 sync dist/ s3://leandro-pp.dev"
+        "deploy": "aws s3 sync dist/ s3://lpp-app"
     },
     "dependencies": {
         "@types/systemjs": "^6.1.1",
